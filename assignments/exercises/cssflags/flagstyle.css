@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+  font-size: 0;
+}
+#france {
+  width: 700px;
+  height: 400px;
+  position: relative;
+}
+.box {
+  width: 33%;
+  height: 100%;
+  display: inline-block;
+}
+#germany {
+  width: 700px;
+  height: 400px;
+  position: relative;
+}
+.box1 {
+  height: 33%;
+}
+#madagascar {
+  width: 700px;
+  height: 400px;
+}
+.tinybox {
+  height: 50%;
+  width: 75%;
+  float: left;
+}
+.tallbox {
+  height: 100%;
+  width: 25%;
+  float: left;
+}
+#switz {
+  height: 700px;
+  width: 700px;
+  background-color: red;
+  position: relative;
+}
+.box {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.vert {
+  height: 500px;
+  width: 150px;
+}
+.hor {
+  height: 150px;
+  width: 500px;
+}
+#sweden {
+  height: 700px;
+  length: 700px;
+  background-color: #006aa7;
+  position: relative;
+}

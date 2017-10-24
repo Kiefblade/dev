@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navmenu {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navmenu a {
+  color: white;
+  text-align: center;
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+.contentarea {
+  background-color: #ffffff;
+  width: 70%;
+  height: 100%;
+  margin: 50px auto 0 auto;
+}
+body {
+  background-color: #8FB299
+}
+h1{
+  font-size: 45px;
+  text-align: center;
+  text-decoration-style: solid;
+}

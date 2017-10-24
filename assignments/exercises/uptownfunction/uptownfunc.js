@@ -8,23 +8,22 @@ var lyrics = ["This", "hit", "that", "ice", "cold",
               "with", "Saint", "Laurent", "Gotta", "kiss",
               "myself", "I'm", "so", "pretty"];
 
-/* function printLyrics() {
-    for (var i = 0; i < lyrics.length; i++) {
-    console.log(lyrics[i] + " ");
-  }
+function printLyrics() {
+    console.log(lyrics.join(" "));
 }
 printLyrics();
 
 function printLyricsBackwards() {
-    for (var i = lyrics.length; i >= 0; i--) {
-      console.log(lyrics[i] + " ");
-    }
+      console.log(lyrics.reverse().join(" "));
 }
+
 printLyricsBackwards();
-*/
+
 function printEveryOther() {
+  var moreLyrics = [];
   for (var i = 0; i < lyrics.length; i+=2) {
-    console.log(lyrics[i] + " ");
+      moreLyrics.push(lyrics + " ")
   }
+      console.log(moreLyrics.join);
 }
 printEveryOther();
