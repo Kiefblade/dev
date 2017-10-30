@@ -1,0 +1,172 @@
+@font-face {
+  font-family: snes;
+  src: url(fonts/snesitalics.ttf);
+}
+body{
+  background-color: #E30B21;
+  font-family: snes;
+}
+.header{
+  background-color: #202425;
+  height: 150px;
+  border: 1px solid black;
+}
+.header img{
+  height: 150px;
+  width: 150px;
+}
+.header .bounty{
+  font-family: snes;
+  font-size: 125px;
+  color: white;
+}
+.header img{
+  height: 125px;
+  width: 125px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+.goombahpic{
+  background-color: white;
+  height: 300px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.goombahpic img{
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.goombahpic p{
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+.goombahpic h2{
+  text-align: center;
+}
+.goombahlist{
+  background-color: white;
+  height: 300px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.goombahform{
+  margin-top: 150px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+.cheeppic{
+  background-color: white;
+  height: 300px;
+  border-top: 0;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.cheeppic img{
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.cheeppic p{
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+.cheeppic h2{
+  text-align: center;
+}
+.cheeplist{
+  background-color: white;
+  height: 300px;
+  border-top: 0;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.cheepform{
+  margin-top: 150px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+.bobomb{
+  background-color: white;
+  height: 300px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.bobomb img{
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.bobomb p{
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+.bobomb h2{
+  text-align: center;
+}
+.bomblist{
+  background-color: white;
+  height: 300px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.bombform{
+  margin-top: 150px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+.returnpic{
+  height: 100px;
+  background-color: #202425;
+}
+.returnvalue{
+  height: 100px;
+  background-color: #202425;
+}
+.returnvalue img{
+  height: 100px;
+  width: 100px;
+  float: right;
+}
+.returnvalue p{
+  display: inline;
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+}
+#totalcoins{
+  display: inline;
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#totalButton{
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+  background-color: whitesmoke;
+}
+.companyinfo{
+  background-color: whitesmoke;
+  height: 100px;
+  background-color: #202425;
+}
+.companyinfo p{
+  color: whitesmoke;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 70px;
+}

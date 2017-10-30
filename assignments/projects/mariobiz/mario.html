@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="koopahstyle.css"/>
+    </head>
+      <body>
+
+          <div class="container">
+
+          <div class="row heading">
+            <div class="col-md-12 header">
+              <img src="images/mario.png"/>
+              <div class="bounty">MARIO PEST CONTROL</div>
+            </div>
+          </div>
+
+            <div class="row goom">
+              <div class="col-md-6 goombahpic">
+                <h2>Goombah's</h2>
+                <p>are worth 5 coins</p>
+                <img src="images/goombah.png" name="goopic"/>
+              </div>
+              <div class="col-md-6 goombahlist">
+                <form class="goombahform">
+                  <div class="form-group">
+                    <label for="Goombah's Killed">Enter a number:</label>
+                    <input type="number" class="form-control" id="goombahNum">
+                </form>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row cheep">
+              <div class="col-md-6 cheeppic">
+                <h2>Cheep Cheep's</h2>
+                <p>are worth 11 coins</p>
+                <img src="images/cheepcheep.png" name="cheepic"/>
+              </div>
+              <div class="col-md-6 cheeplist">
+                <form class="cheepform">
+                    <div class="form-group">
+                    <label for="Cheep Cheep's Killed">Enter a number:</label>
+                    <input type="number" class="form-control" id="cheepNum">
+                </form>
+                  </div>
+              </div>
+            </div>
+
+              <div class="row">
+                  <div class="col-md-6 bobomb">
+                    <h2>Bob-Omb's</h2>
+                    <p>are worth 7 coins</p>
+                    <img src="images/bobomb.png" name="bobpic"/>
+                  </div>
+                  <div class="col-md-6 bomblist">
+                    <form class="bombform">
+                      <div class="form-group">
+                        <label for="Bob-Om's Killed">Enter a number:</label>
+                        <input type="number" class="form-control" id="bobNum">
+                      </form>
+                      </div>
+                  </div>
+              </div>
+
+              <div="row companyinfo">
+                <div class="col-md-6 companyinfo">
+                  <p>Property of Mario Corp., 2113 Mushroom Way <a href="#">www.luigisucks.org</a></p>
+                </div>
+                <div class="col-md-6 returnvalue">
+                  <img src="images/mariocoin.png" name="coin"/>
+                  <button type="button" class="btn" id="totalButton">Your total is</button><br>
+                  <p id="totalcoins"></p>
+                </div>
+              </div>
+      <script src="coins.js"></script>
+      </body>
+</html>

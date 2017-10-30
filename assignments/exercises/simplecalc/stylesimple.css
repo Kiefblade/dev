@@ -1,0 +1,62 @@
+body{
+  background-color: whitesmoke;
+}
+#add{
+  height:100px;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+#subtract{
+  height:100px;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid;
+  border-top: 0;
+}
+#multiply{
+  height:100px;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid;
+  border-top: 0;
+}
+h1{
+  text-align: center;
+  font-family: 'Arial', 'sans-serif';
+}
+input{
+  height: 25px;
+  width: 75px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+button{
+  border-radius: 25px;
+  color: white;
+  background-color: black;
+  display: block;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+#addoutput{
+  padding-bottom: 20px;
+  padding-right: 10px;
+  text-align: center;
+  color: red;
+}
+#suboutput{
+  padding-bottom: 20px;
+  padding-right: 10px;
+  text-align: center;
+  color: red;
+}
+#multoutput{
+  padding-bottom: 10px;
+  text-align: center;
+  padding-right: 10px;
+  color: red;
+}
