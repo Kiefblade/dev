@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url('http://www.csszengarden.com/214/bamboo.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@font-face {
+  font-family: 'julius';
+  src: url('https://fonts.gstatic.com/s/juliussansone/v6/iU65JP9acQHPDLkdalCF7pbhOpL-vLTkIjCTuVYsuO0.woff2')
+}
+@font-face {
+  font-family: 'libreitalic';
+  src: url('https://fonts.gstatic.com/s/librebaskerville/v5/QHIOz1iKF3bIEzRdDFaf5fbsUggLxuOzHNuXcSFlTaY.woff2');
+}
+@font-face {
+  font-family: 'libre';
+  src: url('https://fonts.gstatic.com/s/librebaskerville/v5/pR0sBQVcY0JZc_ciXjFsK8j0T1k_tV7QYhgnOhA2764.woff2');
+}
+@font-face {
+  font-family: 'icons';
+  src: url('verdemoderna.woff');
+}
+/*
+
+HEADER STYLING!
+
+ */
+.mainheader{
+  height: 300px;
+  width: 100%;
+  background-color: silver;
+  position: relative;
+  color: #fff;
+  font-size: 1.5em;
+  background-image: url("gridlines.png"), url("contours-opaque.png"), url("huntington.jpg");
+  font-family: 'julius';
+  position: relative;
+}
+
+.viewDesign {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 35%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(229,237,232,0.1);
+  color: rgba(255, 255, 255, .6);
+  font-size: 1.1em;
+}
+
+.viewDesign a {
+  margin: 30% auto;
+  margin-left: 50px;
+  display: inline-block;
+  width: 65%;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(229,237,232,0.1);
+  color: rgba(255, 255, 255, .6);
+  font-size: 1em;
+}
+
+.top-content {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 75%;
+  font-family: 'julius';
+}
+.top-content h1 {
+  margin-top: 25px;
+  font-weight: 200;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+.top-content img {
+  width: 13%;
+  height: auto;
+  float: left;
+  margin-right: 15px;
+}
+.top-content h3{
+  width: 70%;
+  display: inline-block;
+  font-family: 'libreitalic';
+  font-size: .75em;
+  color: rgba(179, 199, 198, 0.7);
+}
+/* SIDEBAR CONTENT */
+
+aside {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(50, 80, 80,.05);
+  width: 35%;
+  font-family: 'julius';
+  font-size: 1.2em;
+  height: 2175px;
+}
+.sidelinks{
+  position: relative;
+  margin-top: 0px;
+  margin-left: 50px;
+}
+.sidelinks ul li{
+  list-style: none;
+  padding: 20px;
+}
+.sidelinks li{
+  border-bottom: 1px solid rgba(0,0,0,.1)
+}
+
+aside {
+  position: absolute;
+  top: 44%;
+}
+.viewDesign a:hover{
+  background-color: rgba(229,237,232,0.3);
+  color: rgba(255, 255, 255, 1);
+}
+.viewDesign .arrow{
+  width: 15%;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 30% auto;
+  display: inline-block;
+  background-color: rgba(229,237,232,0.1);
+  font-family: 'icons';
+  font-size: 1em;
+  margin-left: -5px;
+}
+.resources{
+  margin-top: 360px;
+}
+
+/* MAIN BODY CONTENT */
+
+.mainbody{
+  max-width: 100%;
+  background-color: #FFFFFF;
+  color: black;
+  font-family: 'libre';
+  margin: 0;
+}
+.maincontent{
+  width: 70%;
+  margin-left: 10%;
+}
+.maincontent .mainintro{
+  line-height: 175%;
+  width: 70%;
+  padding: 20px;
+  font-size: 15px;
+}
+.maincontent .bodytitle{
+  padding: 20px;
+  font-family: 'julius';
+  font-size: 1.75em;
+}
+.maincontent .fake{
+  width: 70%;
+  line-height: 175%;
+  padding: 20px;
+  font-size: 15px;
+  font-family: 'libre';
+}
+.maincontent a{
+  color: #A9B896;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 5px;
+}
+.maincontent a:hover{
+  background-color: #418A9E;
+  transition: all .25s ease-in-out;
+  color: white;
+}
+.maincontent .maintext{
+  width: 70%;
+  line-height: 175%;
+  padding: 20px;
+  font-size: 15px;
+}
+.maincontent .so{
+  font-family: 'julius';
+  font-size: 1.7em;
+  width: 70%;
+  padding: 20px;
+  line-height: 175%;
+}
+.maincontent span{
+  font-family: 'libre';
+}
+.secondbody{
+  max-width: 100%;
+  color: black;
+  background-color: rgba(138,188,159, .4);
+}
+.secondcontent{
+  width: 70%;
+  margin-left: 10%;
+  padding: 20px;
+  color: black;
+}
+.participation{
+  font-family: 'julius';
+  font-size: 1.75em;
+  line-height: 175%;
+  width: 70%;
+  margin: 5% 0;
+}
+.secondcontent .secondtext{
+  font-family: 'libre';
+  font-size: 15px;
+  line-height: 175%;
+  width: 70%;
+  margin: 5% 0;
+}
+.benefits{
+  font-family: 'julius';
+  font-size: 1.75em;
+  line-height: 175%;
+  width: 70%;
+  margin: 5% 0;
+}
+.fakelinks{
+  font-family: 'icons';
+  content: "D";
+}
+
+/* FOOTER SECTION */
+
+.creditsbody{
+  height: 320px;
+  width: 100%;
+  background-image: url("gridlines.png"),url("contours.png"),url('http://www.csszengarden.com/214/koi.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.creditcontent{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6em;
+  color: rgba(255, 255, 255, .4);
+  line-height: 150%;
+  font-family: 'libreitalic';
+}
+.name{
+  color: rgb(255, 255, 255);
+}
+.book{
+  color: rgb(255,255,255);
+}
+.footcontent{
+  background-color: rgb(21, 67, 71);
+  height: 150px;
+  margin: 0;
+}
+.footcontent li{
+  display: inline-block;
+  padding: 30px;
+  color: white;
+  border-radius: 50%;
+}
+.footcontent ul{
+  text-align: center;
+  margin: 0;
+}
+.html5::before{
+  font-family: 'icons';
+  content: "5";
+  font-size: 4.75em;
+  text-align: center;
+}
+.jigsaw::before{
+  font-family: 'icons';
+  content: "3";
+  font-size: 4.75em;
+}
+.cc::before{
+  font-family: 'icons';
+  content: "c";
+  font-size: 4.75em;
+}
+.mezzo::before{
+  font-family: 'icons';
+  content: "a";
+  font-size: 4.75em;
+}
+.github::before{
+  font-family: 'icons';
+  content: "g";
+  font-size: 4.75em;
+}
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .viewDesign{
+    position: relative;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  .viewDesign a{
+    margin: 0 auto;
+  }
+  aside{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 0;
+  }
+  aside .sidelinks {
+    margin: 0;
+  }
+  .mainbody *{
+    width: 100%;
+  }
+  .secondcontent{
+    width: 100%;
+  }
+}

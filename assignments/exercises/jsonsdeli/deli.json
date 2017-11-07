@@ -1,0 +1,57 @@
+{
+  "Appetizers": [{
+      "Name": "Fries",
+      "Ingredients": ["Potatoes", "Salt"],
+      "Description": "Too much salt."
+    },
+    {
+        "Name": "Coleslaw",
+        "Ingredients": ["Old Mayo", "Wilted lettuce"],
+        "Description": "Smells funny"
+    }
+    ],
+  "Cold Sandwiches": [{
+        "Name": "Turkey",
+        "Ingredients": ["Tukey Giblets", "Beak Fragments"],
+        "Description": "Thanksgiving Favorite!"
+    },
+    {
+        "Name": "Ham",
+        "Ingredients": ["Boar", "Pine Needles"],
+        "Description": "Rustic, earthy flavors"
+    }
+    ],
+   "Hot Sandwiches": [{
+        "Name": "Reuben",
+        "Ingredients":["Corned Beef", "Thousand Island Dressing", "Marbled Rye", "Saurkraut"],
+        "Description": "Only order this."
+    },
+    {
+      "Name": "Paddy Melt",
+      "Ingredients":["Meat", "Cheese", "Bread"],
+      "Description":"For boring people."
+    }
+    ],
+   "Desserts": [{
+     "Name": "Cherry Pie",
+     "Ingredients":["Pie Crust", "Cherry Filling", "Sugar n' stuff"],
+     "Description":"The best dessert on tha planet."
+    },
+    {
+      "Name": "Ice Cream",
+      "Ingredients": ["Cream", "Sugar", "Vanilla Extract"],
+      "Description": "It's kinda whatever, honestly."
+    }
+    ],
+   "Drinks": [{
+      "Name":"Beer",
+      "Ingredients": ["Hops", "Barley"],
+      "Description": "Don't mind if I do."
+     },
+     {
+       "Name": "More Beer",
+       "Ingredients": ["More Hops", "More Barley"],
+       "Description": "Round two!"
+     }
+     ]
+}
