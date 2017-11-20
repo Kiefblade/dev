@@ -103,7 +103,6 @@ function enemyAttack(monster){
 function enemyDie(monster){
   newPlayer.inventory.push(monster.inventory)
   console.log("You picked up: " + monster.inventory);
-
 }
 
 function die(){

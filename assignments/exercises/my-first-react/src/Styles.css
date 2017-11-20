@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #FAFFFF;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: #7F1B14;
+}
