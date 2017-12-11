@@ -4,9 +4,8 @@ export default function Splash(){
   return(
     <div className='splash'>
       <div className='splash-content'>
-        <img src={require('../images/black.svg')}/>
-        <h1>DECKED OUT</h1>
-        <h3>MTG Deck-Building Tool</h3>
+        <img src={require('../images/deckedlogo.svg')}/>
+        <h1>MTG DECK-BUILDING TOOL</h1>
       </div>
     </div>
   )

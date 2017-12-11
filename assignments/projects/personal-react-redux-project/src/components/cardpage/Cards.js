@@ -28,7 +28,7 @@ class Cards extends Component {
 
   handleClick(card, i) {
     this.props.addToFavorites(card);
-    document.getElementsByClassName("addedHeading")[i].innerText = 'Card added to your favorites.';
+    document.getElementsByClassName("addedHeading")[i].innerText = '+Added Card+';
   }
   // componentDidMount(){
   //   this.props.addCards(this.props.cards, this.state);
@@ -41,7 +41,7 @@ class Cards extends Component {
             <img onClick={() => {this.handleClick(card, i)}} className = "card-image" src={card.imageUrl}/>
             <h5 className="card-title">{card.name}</h5>
             <h5>Set: {card.setName}</h5>
-            <p className="addedHeading"></p>
+            <span className="addedHeading"></span>
           </div>
         )}
     )

@@ -12,7 +12,6 @@ export default function App(props){
     <main>
       <Navbar/>
       <Switch>
-          <Route exact path="/"/>
           <Route path="/main" component={Cards}/>
           <Route path="/favorites" component={Favorites}/>
           <Route path="/home" component={Splash}/>

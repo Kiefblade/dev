@@ -21,35 +21,36 @@
   padding: 20px;
   background: linear-gradient(to bottom, #232526, #414345);
   overflow: auto;
+  height: 60px;
 }
-.navimage {
-  height: 50px;
+/*.navimage {
+  height: 20px;
   width: 150px;
-  /*background-image: url('./images/deckedout.png');*/
+  background-image: url('./images/deckedout.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: rgba(255,255,255, 0);
   float: right;
-}
+} */
 .navlinks {
-  padding: 15px;
-  color: whitesmoke;
-  background-color: transparent;
-  border: 1px solid whitesmoke;
-  border-radius: 5px;
+  padding-top: 12px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   text-decoration: none;
   float: left;
-  width: 100px;
-  height: 50px;
-  margin: auto 3px;
+  width: 33.3%;
+  height: 40px;
+  margin: 0 auto;
   text-align: center;
-  margin-top: 30px;
   transition: all .2s ease-in-out;
   cursor: pointer;
 }
 .navlinks:hover {
-  background-color: #72C8C8;
+  background-color: #86CFCB;
   color: black;
   border: 1px solid black;
 }
@@ -120,6 +121,7 @@
   margin-top: 20px;
   text-align: center;
   font-size: 18px;
+  position: relative;
 }
 .card-image{
   transform: scale(1);
@@ -136,6 +138,7 @@
   margin: 0 auto;
   height: 100vh;
   overflow: scroll;
+  color: rgb(41,43,44);
 }
 
 .card-title::after,
@@ -151,11 +154,20 @@
 
 .addedHeading {
   text-transform: uppercase;
-  letter-spacing: 3px;
+  text-align: center;
+  margin: 0 auto;
   font-family: "Plane-Normal", sans-serif;
-  font-weight: 700;
-  margin-top: 10px;
-  color: #3da047;
+  font-weight: 300;
+  color: rgb(41,43,44);
+  background-color: rgba(255, 255, 255, .8);
+  font-size: 18px;
+  height: 25px;
+  position: absolute;
+  border-radius: 15%;
+  padding-top: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 /* SPLASH STYLING */
@@ -164,7 +176,7 @@
   background-image: url('./images/mtgbanner.jpg');
   background-position: center center;
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
   position: relative;
   font-family: 'Plane-bold', sans-serif;
 }
@@ -175,4 +187,5 @@
   transform: translate(-50%, -50%);
   color: whitesmoke;
   text-align: center;
+  font-size: .7em;
 }
