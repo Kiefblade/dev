@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Plane-normal", sans-serif;
+  font-weight: 100;
+}
+html {
+  background-color: whitesmoke;
+}
+@font-face {
+  font-family: "Plane-normal";
+  src: url("./fonts/Planewalker.otf");
+}
+@font-face {
+  font-family: "Plane-bold";
+  src: url('/fonts/Planewalker-Bold.otf');
+}
+/*NAVBAR STYLING*/
+
+.navbar {
+  width: 100%;
+  z-index: 99999;
+  list-style: none;
+  background: #1E1F1E;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.navimage {
+  width: 250px;
+  background-color: rgba(255,255,255, 0);
+  float: right;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  overflow: auto;
+}
+.linkcontainer {
+  margin-top: 20px;
+  overflow: auto;
+}
+.linkcontainer ul {
+  float: right;
+}
+.container .navlinks {
+  display: inline-block;
+  height: 40px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-top: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 10px;
+  width: 18%;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  float: left;
+}
+.container .navlinks:hover {
+  background-color: #78CAC6;
+  color: black;
+  border: 1px solid black;
+  border-top: 0px;
+}
+.navlinks a {
+  text-decoration: none;
+}
+.navlinks a:visited {
+  color: black;
+}
+/*BUTTON STYLING*/
+
+.red {
+  width: 20%;
+  height: 40px;
+  background-image: url('images/red.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #F7AA91;
+}
+.white {
+  width: 20%;
+  height: 40px;
+  background-image: url('images/white.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #FFFAD7;
+}
+.blue {
+  width: 20%;
+  height: 40px;
+  background-image: url('images/blue.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #ACE0F9;
+}
+.black {
+  width: 20%;
+  height: 40px;
+  background-image: url('images/black.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #CBC2BF;
+}
+.green {
+  width: 20%;
+  height: 40px;
+  background-image: url('images/green.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #9CD2AF;
+}
+.button-form{
+  margin-top: 62px;
+  background-color: whitesmoke;
+}
+.button-form button {
+  border-radius: 0px;
+  border: 1px solid black;
+  box-shadow: 0;
+  transition: all .2 ease-in-out;
+}
+.button-form button:hover {
+  box-shadow: inset 0px 5px 3px -3px rgba(57, 59, 60, .8);
+  cursor: pointer;
+}
+
+/* FORM STYLING */
+.cardpage {
+  background-color: whitesmoke;
+}
+.deckform {
+  background-color: whitesmoke;
+  width: 50%;
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+}
+.deckinput {
+  margin-top: 5px;
+  border: 1px solid #1E1F1E;
+  border-radius: 15px;
+  width: 450px;
+  height: 50px;
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+}
+.deckbutton {
+  display: inline-block;
+  margin-top: 5px;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 10px;
+  background-color: #1E1F1E;
+  color: white;
+}
+.deckbutton:hover{
+  cursor: pointer;
+  color: #78CAC6;
+}
+
+/*CARD STYLING*/
+.card-art{
+  width: 25%;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  background: transparent;
+}
+.card-image{
+  transform: scale(1);
+  transition: all .2s ease-in-out;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.card-image:hover{
+  box-shadow: 3px 3px 8px 3px #afafaf;
+  transform: scale(1.1);
+}
+.card-box{
+  width: 90%;
+  margin: 0 auto;
+  height: 73vh;
+  overflow: scroll;
+  color: rgb(41,43,44);
+}
+
+.card-title::after,
+.card-title::before {
+  content: "";
+  height: 5px;
+  display: inline-block;
+  width: 20px;
+  vertical-align: middle;
+  margin: 10px;
+  background: #000;
+}
+.addedHeading {
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+/* SPLASH STYLING */
+
+.splash {
+  margin-top: 60px;
+  background-image: url('./images/mtgbanner.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 92vh;
+  position: relative;
+  font-family: 'Plane-bold', sans-serif;
+}
+.splash-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  text-align: center;
+  font-size: 10px;
+}

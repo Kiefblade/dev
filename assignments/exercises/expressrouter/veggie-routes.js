@@ -11,5 +11,10 @@ veggieRouter.route('/')
     veggieData.push(req.body);
     return res.send(veggieData);
   })
+veggieRouter.route('/:veggieId')
+  .get((req, res) => {
+    res.send(veggieData.veggieId);
+  })
+
 
 module.exports = veggieRouter;

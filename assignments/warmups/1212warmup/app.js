@@ -1,0 +1,3 @@
+function filterDatabase(query, database) {
+
+}
