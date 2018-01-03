@@ -19,5 +19,5 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build && mv build/index.html build/200.html && surge build my-mtg-builder.surge.sh"
   },
-    "proxy": "http://localhost:3000"
+    "proxy": "http://localhost:7500"
 }

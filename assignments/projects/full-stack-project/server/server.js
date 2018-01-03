@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 7500;
 
 app.use(morgan('dev'));
 app.use(bodyParser.json());
@@ -14,7 +14,7 @@ app.listen(port, () => {
 })
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/deck-collection',
+mongoose.connect('mongodb://localhost/deck-collections',
       {useMongoClient: true},
       err => {
         if (err) throw err;
@@ -22,4 +22,4 @@ mongoose.connect('mongodb://localhost/deck-collection',
       }
 )
 
-app.use("/decks", require('./routes/deck-route.js'));
+app.use("/main", require('./routes/deck-route.js'));

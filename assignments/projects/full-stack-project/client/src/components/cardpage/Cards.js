@@ -2,17 +2,19 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {addCards} from '../../redux/cards'
 import {addToFavorites} from '../../redux/favorites'
+import {postCards} from '../../redux/postdeck'
 
 class Cards extends Component {
   constructor(){
     super();
     this.state = {
       search: "",
-      deck: ""
+      name: ""
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.deckSubmit = this.deckSubmit.bind(this);
   }
   handleChange(e){
     this.setState({
@@ -24,6 +26,13 @@ class Cards extends Component {
     this.props.addCards(this.props.cards, this.state.search);
     this.setState({
       search: ""
+    })
+  }
+  deckSubmit(e){
+    e.preventDefault();
+    this.props.postCards(this.props.favoriteCards, this.state.name);
+    this.setState({
+      name: ""
     })
   }
 
@@ -67,13 +76,15 @@ class Cards extends Component {
               {set}
           </main>
         </form>
-        <form className="deckform" /* onSubmit = {this.deckSubmit} */>
-          <input type="text" className="deckinput" placeholder="Enter a deck name." name="deck" value={this.state.deck} onChange={this.handleChange} />
-          <button className="deckbutton">Submit Deck!</button>
-        </form>
+        <div className="form-container">
+          <div className="deckform">
+            <input type="text" className="deckinput" placeholder="Enter a deck name." name="name" value={this.state.name} onChange={this.handleChange} />
+            <button onClick={this.deckSubmit} className="deckbutton">Submit Deck!</button>
+          </div>
+        </div>
       </div>
     )
   }
 }
 
-export default connect(state => state, {addCards, addToFavorites})(Cards)
+export default connect(state => state, {addCards, addToFavorites, postCards})(Cards)
