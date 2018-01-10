@@ -9,6 +9,7 @@ const port = process.env.PORT || 6660;
 
 app.use(bodyParser.json());
 app.use("/main", require("./routes/signup"), expressJwt({secret: process.env.SECRET}));
+app.use("/shop", expressJwt({secret: process.env.SECRET}), require("./routes/game"));
 
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost/rpg",

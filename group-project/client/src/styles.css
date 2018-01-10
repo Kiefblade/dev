@@ -1,0 +1,442 @@
+/* GENERAL STYLING */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Neuropol";
+  letter-spacing: 1px;
+}
+* button {
+  background-image: url('./media/images/hixs-evolution.png');
+  background-position: center;
+  transform: scale(1);
+  transition: all .2s ease-in-out;
+}
+* button:hover {
+  background-image: url('./media/images/hixs-evolution.png');
+  background-position: center;
+  transform: scale(1.05);
+}
+@font-face{
+  font-family: "Neuropol";
+  src: url('./media/fonts/neuropol.ttf');
+}
+
+/* NAVBAR BUSINESS */
+.navbar {
+  padding: 30px;
+  background-color: #1f1f1f;
+  background-image: url('./media/images/hixs.png');
+  background-size: cover;
+  background-position: center;
+}
+.navbar button {
+  float: right;
+  margin: 0;
+  width: 80px;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #C659CC;
+  border: 1px solid #1f1f1f;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 1px 1px 1px #1f1f1f;
+}
+.navbar button:hover {
+  background-color: #1f1f1f;
+  border: 1px solid #C659CC;
+  box-shadow: 2px 2px 3px 1px #C659CC;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 1px 1px 1px #1f1f1f;
+  cursor: pointer;
+}
+
+/* FOOTER STYLING */
+.footer {
+  padding: 30px;
+  background-color: #1f1f1f;
+  background-image: url('./media/images/hixs.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* GENERAL BUTTON STYLING */
+
+button {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* LOGIN SCREEN STYLING */
+.loginscreen {
+  height: 82.8vh;
+  width: 100%;
+  position: relative;
+  background-image: url('./media/images/cyberpunkbg.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gametitle {
+  width: 100%;
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 108px;
+  font-size: 28px;
+  text-shadow: 5px 5px 2px #1f1f1f;
+}
+.loginform {
+  width: 25%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.loginform input {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1f1f1f;
+  border: 1px solid #C659CC;
+  color: whitesmoke;
+  padding: 10px;
+  margin-top: 5px;
+  text-align: center;
+}
+.loginform button {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 3px;
+  margin-left: 5px;
+  width: 75px;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #C659CC;
+  border: 1px solid #1f1f1f;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 1px 1px 1px #1f1f1f;
+}
+.loginform button:hover {
+  background-color: #1f1f1f;
+  border: 1px solid #C659CC;
+  box-shadow: 1px 1px 3px 1px #C659CC;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 1px 1px 1px #1f1f1f;
+  cursor: pointer;
+}
+.buttoncontainer {
+  display: block;
+  margin: 0 auto;
+  float: right;
+}
+
+/* GAME SCREEN STYLING */
+
+.main-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  list-style: none;
+  width: 50%;
+  font-size: 2em;
+}
+
+.main-nav li {
+  margin-bottom: 16.5%;
+  text-align: center;
+}
+
+.screen-container {
+  height: 82.8vh;
+  overflow: auto;
+  position: relative;
+  background-image: url("./media/images/cyberpunkshop2bg.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+
+.screen-container button {
+  width: 100%;
+  padding:18px;
+  background-color: #C659CC;
+  border-color:#1f1f1f;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 2px 2px 2px #1f1f1f;
+}
+
+.screen-container button:hover {
+  background-color: #1f1f1f;
+  box-shadow: 0px 1px 5px 1px #29EDF8;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 1px 1px 1px #29EDF8;
+}
+
+.char-info-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-5%, -50%);
+  width: 50%;
+  background-color: rgba(31, 31, 31, 0.7);
+  box-shadow: 0px 1px 6px #29EDF8;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-bottom: 8px;
+  text-shadow: 1px 1px 1px #29EDF8;
+}
+
+.char-info img {
+  width: 25%;
+}
+
+.char-image {
+  float: left;
+}
+
+.char-info-header {
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.main-left {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-25%, -50%);
+}
+
+.inventory {
+  float: left;
+  width: 75%;
+  height: 250px;
+  padding-left: 30px;
+  list-style: none;
+  overflow: scroll;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.inventory-list li {
+  display: inline-block;
+}
+
+.inventory-list .inventory-description {
+  display: inline-block;
+  width: 75%;
+  vertical-align: top;
+  text-align: center;
+  transform: scale(1);
+  transition: all .2s ease-in-out;
+}
+
+.inventory-description {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.inventory-list:hover {
+  border: 1px solid #29EDF8;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px #29EDF8;
+  transform: scale(1.03);
+}
+
+.inventory-list p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.inventory img {
+  width: 75px;
+}
+
+/* SHOP SCREEN STYLING */
+
+.bought {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: #C659CC;
+}
+
+.bought p {
+  padding: 10px;
+  text-shadow: 2px 2px 6px #1f1f1f;
+}
+
+.shop-container {
+  height: 82.8vh;
+  overflow: auto;
+  position: relative;
+  background-image: url("./media/images/cyberpunk2.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+
+.shop-window {
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: scroll;
+  height: 75%;
+  background-color: rgba(31, 31, 31, .7);
+  padding: 10px;
+}
+
+.shop-container button {
+  position: absolute;
+  top: 95%;
+  left: 86%;
+  transform: translate(-86%, -95%);
+  width: 80px;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 1px 1px 1px #1f1f1f;
+  background-color: #C659CC;
+  border: 1px solid #1f1f1f;
+  box-shadow: 2px 2px 3px 1px #1f1f1f;
+}
+
+.shop-container button:hover {
+  background-color: #1f1f1f;
+  border: 1px solid #29EDF8;
+  box-shadow: 0px 1px 3px 1px #29EDF8;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 1px 1px 1px #29EDF8;
+  cursor: pointer;
+}
+
+.shop-inventory {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 15px;
+}
+
+.shop-inventory:hover {
+  border: 1px solid #C659CC;
+  cursor: pointer;
+  text-shadow: 1.5px 1.5px 3px #C659CC;
+}
+
+.shop-inventory img {
+  width: 10%;
+  height: 75px;
+  width: 75px;
+}
+
+.shop-inventory h2 {
+  padding: 10px;
+}
+
+.shop-inventory h5 {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.shop-title {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 32px;
+  text-shadow: 2.5px 2.5px 2px #C659CC;
+  color: rgba(255, 255, 255, .75);
+}
+
+/* BATTLE CONTAINER */
+
+.battle-container {
+  height: 82.8vh;
+  overflow: auto;
+  position: relative;
+  background-image: url("./media/images/cyberpunkbattlebg.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  color: #fff;
+}
+
+.battle-buttons {
+  width: 100%;
+  display: block;
+}
+
+.battle-buttons li {
+  padding-top: 15px;
+  width: 33.3%;
+  display: inline-block;
+  text-align: center;
+}
+
+.battle-buttons button {
+  width: 75%;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #C659CC;
+  border: 1px solid #1f1f1f;
+  text-shadow: 2px 2px 6px #1f1f1f;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.battle-buttons button:hover {
+  background-color: #1f1f1f;
+  text-shadow: 2px 2px 6px #29EDF8;
+  cursor: pointer;
+  box-shadow: 0px 1px 6px #29EDF8;
+}
+
+.player-character {
+  width: 35%;
+  display: inline-block;
+  margin-top: 220px;
+}
+
+.player-character img {
+  width: 35%;
+  display: block;
+  margin: 0 auto;
+}
+
+.enemy-character {
+  width: 35%;
+  display: inline-block;
+}
+
+.enemy-character img {
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+}
+
+.damage-log {
+  text-shadow: 0px 1px 6px #29EDF8;
+  padding-top: 10px;
+}
+
+.damage-container {
+  width: 25%;
+  height: 350px;
+  display: inline-block;
+  background-color: rgba(31, 31, 31, 0.75);
+  overflow: scroll;
+  text-align: center;
+  margin-left: 30px;
+  box-shadow: 0px 0px 1px 1px #29EDF8;
+}

@@ -1,21 +1,25 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Switch, Route} from 'react-router-dom';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+import Login from './components/login/Login';
+import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
+import MainScreen from "./components/gamescreen/MainScreen";
+import Shop from "./components/shop/Shop";
+import BattleScreen from "./components/battle/BattleScreen";
+
+export default function App(){
+  return(
+    <main>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Login} />
+          <Route path="/mainscreen" component={MainScreen} />
+          <Route path="/shop" component={Shop} />
+          <Route path="/battlescreen" component={BattleScreen} />
+        </Switch>
+        <Footer />
+    </main>
+
+  )
 }
-
-export default App;
