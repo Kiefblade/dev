@@ -27,9 +27,8 @@ console.dir(this.props.auth);
       <div className="screen-container">
         <div className="main-left">
           <ul className="main-nav">
-            <li><button>CHARACTER</button></li>
-            <li><Link to="/shop"><button>SHOP</button></Link></li>
-            <li><Link to="/battlescreen"><button>BATTLE</button></Link></li>
+            <li><Link to="/shop"><button className="pill-top">SHOP</button></Link></li>
+            <li><Link to="/battlescreen"><button className="pill-bot">BATTLE</button></Link></li>
           </ul>
         </div>
         <div className="char-info-container">

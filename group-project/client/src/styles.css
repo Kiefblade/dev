@@ -37,15 +37,16 @@
   color: rgba(255, 255, 255, 0.75);
   background-color: #C659CC;
   border: 1px solid #1f1f1f;
-  color: rgba(255, 255, 255, 0.75);
   text-shadow: 1px 1px 1px #1f1f1f;
+  border-radius: 10px;
+  padding: 5px;
 }
 .navbar button:hover {
   background-color: #1f1f1f;
-  border: 1px solid #C659CC;
-  box-shadow: 2px 2px 3px 1px #C659CC;
+  border: 1px solid #29EDF8;
+  box-shadow: 0px 1px 1px 1px #29EDF8;
   color: rgba(255, 255, 255, 0.75);
-  text-shadow: 1px 1px 1px #1f1f1f;
+  text-shadow: 1px 1px 1px #29EDF8;
   cursor: pointer;
 }
 
@@ -58,15 +59,8 @@
   background-position: center;
 }
 
-
-/* GENERAL BUTTON STYLING */
-
-button {
-  padding: 5px;
-  border-radius: 10px;
-}
-
 /* LOGIN SCREEN STYLING */
+
 .loginscreen {
   height: 82.8vh;
   width: 100%;
@@ -116,13 +110,15 @@ button {
   border: 1px solid #1f1f1f;
   color: rgba(255, 255, 255, 0.75);
   text-shadow: 1px 1px 1px #1f1f1f;
+  border-radius: 10px;
+  padding: 5px;
 }
 .loginform button:hover {
   background-color: #1f1f1f;
-  border: 1px solid #C659CC;
-  box-shadow: 1px 1px 3px 1px #C659CC;
+  border: 1px solid #29EDF8;
+  box-shadow: 1px 1px 3px 1px #29EDF8;
   color: rgba(255, 255, 255, 0.75);
-  text-shadow: 1px 1px 1px #1f1f1f;
+  text-shadow: 1px 1px 1px #29EDF8;
   cursor: pointer;
 }
 .buttoncontainer {
@@ -144,8 +140,12 @@ button {
 }
 
 .main-nav li {
-  margin-bottom: 16.5%;
+  margin-bottom: 2%;
   text-align: center;
+  width: 70%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-left: 50px;
 }
 
 .screen-container {
@@ -159,22 +159,46 @@ button {
   color: #fff;
 }
 
+.pill-top {
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+  height: 190px;
+  background-color: #1f1f1f;
+  text-shadow: 0px 1px 6px #29EDF8;
+  box-shadow: 0px 1px 4px 0px #29EDF8;
+}
+
+.pill-top:hover {
+  background-color: #C659CC;
+  box-shadow: 0px 1px 5px 1px #1f1f1f;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 1px 1px 3px #1f1f1f;
+}
+
+.pill-bot {
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  height: 190px;
+  background-color: #1f1f1f;
+  text-shadow: 0px 1px 6px #29EDF8;
+  box-shadow: 0px 1px 4px 0px #29EDF8;
+}
+
+.pill-bot:hover {
+  background-color: #C659CC;
+  box-shadow: 0px 1px 5px 1px #1f1f1f;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 1px 1px 1px #1f1f1f;
+}
+
 .screen-container button {
   width: 100%;
   padding:18px;
-  background-color: #C659CC;
   border-color:#1f1f1f;
   font-size: 22px;
   color: rgba(255, 255, 255, 0.75);
-  text-shadow: 2px 2px 2px #1f1f1f;
-}
-
-.screen-container button:hover {
-  background-color: #1f1f1f;
-  box-shadow: 0px 1px 5px 1px #29EDF8;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.75);
-  text-shadow: 1px 1px 1px #29EDF8;
 }
 
 .char-info-container {
@@ -308,6 +332,8 @@ button {
   background-color: #C659CC;
   border: 1px solid #1f1f1f;
   box-shadow: 2px 2px 3px 1px #1f1f1f;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .shop-container button:hover {
@@ -374,17 +400,17 @@ button {
 .battle-buttons {
   width: 100%;
   display: block;
+  margin-top: 40px;
 }
 
 .battle-buttons li {
-  padding-top: 15px;
-  width: 33.3%;
+  width: 50%;
   display: inline-block;
   text-align: center;
 }
 
 .battle-buttons button {
-  width: 75%;
+  width: 93%;
   margin: 0 auto;
   display: inline-block;
   padding: 10px;
@@ -393,6 +419,7 @@ button {
   border: 1px solid #1f1f1f;
   text-shadow: 2px 2px 6px #1f1f1f;
   color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
 }
 
 .battle-buttons button:hover {
@@ -406,6 +433,7 @@ button {
   width: 35%;
   display: inline-block;
   margin-top: 220px;
+  text-align: center;
 }
 
 .player-character img {
@@ -415,14 +443,27 @@ button {
 }
 
 .enemy-character {
+  position: relative;
+  text-align: center;
   width: 35%;
   display: inline-block;
+  animation-duration: 2.5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
 }
 
 .enemy-character img {
   display: block;
   margin: 0 auto;
-  width: 35%;
 }
 
 .damage-log {
@@ -439,4 +480,122 @@ button {
   text-align: center;
   margin-left: 30px;
   box-shadow: 0px 0px 1px 1px #29EDF8;
+  margin-bottom: 3%;
+}
+
+.damage-info p {
+  margin-top: 100px;
+  padding: 15px;
+}
+
+.player-death {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: pink;
+  width: 100%;
+  height: 100%;
+  background-image: url('./media/images/gameover.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.enemy-death {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: pink;
+  width: 100%;
+  height: 100%;
+  background-image: url('./media/images/returnscreen.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+* #game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 50px;
+  background-color: #1f1f1f;
+  box-shadow: 0px 1px 4px 1px #29EDF8;
+  font-size: 22px;
+  animation-name: fadein;
+  animation-duration: 2.5s;
+  text-shadow: 1px 1px 4px #29EDF8;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+* #game-over:hover {
+  background-color: #C659CC;
+  box-shadow: 0px 1px 6px 1px #1f1f1f;
+  border: 1px solid #C659CC;
+  text-shadow: 1px 1px 4px #1f1f1f;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.return-title {
+  text-align: center;
+  margin-top: 125px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 4px 4px 4px #000;
+  font-size: 38px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+* #return-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 50px;
+  background-color: #1f1f1f;
+  box-shadow: 0px 1px 4px 1px #29EDF8;
+  font-size: 22px;
+  animation-name: fadein;
+  animation-duration: 2.5s;
+  text-shadow: 1px 1px 4px #29EDF8;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+* #return-button:hover {
+  background-color: #C659CC;
+  box-shadow: 0px 1px 6px 1px #1f1f1f;
+  border: 1px solid #C659CC;
+  text-shadow: 1px 1px 4px #1f1f1f;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.item-drops {
+  width: 50%;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+}
+
+* .item-drops img {
+  width: 25%;
+  float: left;
+}
+
+.item-drops p {
+  float: right;
 }

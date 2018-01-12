@@ -39,7 +39,7 @@ const playerSchema = new Schema({
   },
   damage: {
     type: Number,
-    default: 10
+    default: 1
   }
 })
 

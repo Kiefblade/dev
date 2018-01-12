@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
-import {logout} from '../../redux/authentication'
+import {logout} from '../../redux/authentication';
 import {Link} from 'react-router-dom';
 
 class Navbar extends Component{
@@ -12,7 +12,7 @@ class Navbar extends Component{
   render(){
     return(
       <div className="navbar">
-        <Link to="/"><button onClick={this.handleLogOut = this.handleLogOut.bind(this)}>LOGOUT</button></Link>
+       <Link to="/"><button onClick={this.handleLogOut = this.handleLogOut.bind(this)}>LOGOUT</button></Link>
       </div>
     )
   }
