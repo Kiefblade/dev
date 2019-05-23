@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
+import {Switch, Route} from 'react-router-dom';
+
 import Navbar from './Navbar';
-import Header from './Header';
-// import Body from './Body';
-import Portfolio from './Portfolio';
+import MainBody from './MainBody';
+import MagicBuilder from './MagicBuilder';
+import RpgProject from './RpgProject';
 import '../styles/styles.css'
 
-export default class App extends Component {
-  render() {
+export default function App() {
     return (
-      <div className="App">
+      <main className="App">
         <Navbar />
-        <Header />
-        <Portfolio />
+        <Switch>
+          <Route exact path="/" component={MainBody} />
+          <Route path="/rpg-project" component={RpgProject} />
+          <Route path="/mtg-project" component={MagicBuilder} />
+        </Switch>
         {/* <Footer /> */}
-      </div>
+      </main>
     );
-  }
 }

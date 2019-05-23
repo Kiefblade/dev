@@ -1,0 +1,65 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.nav-links {
+  padding: 1rem 0;
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.splash p {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transform: skewY(1.5deg);
+  transform-origin: 100%;
+}
+
+.splash {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  height: 450px;
+  background-image: url('../assets/background-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: none;
+  transform: skewY(-1.5deg);
+  transform-origin: 100%;
+}
+
+.about-me {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  position: relative;
+}
+
+.portfolio {
+  text-align: center;
+  position: relative;
+}

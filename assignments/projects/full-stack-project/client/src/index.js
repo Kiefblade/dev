@@ -9,7 +9,8 @@ import './styles.css';
 import App from './App';
 import rootReducer from './redux'
 
-const store = createStore(rootReducer, applyMiddleware(thunk))
+const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(), applyMiddleware(thunk)
+);
 
 store.subscribe(() => {
   console.log(store.getState());

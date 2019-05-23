@@ -4,85 +4,303 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
-
 .container {
-  max-width: 960px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 15px;
 }
-
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 1054px) {
+  .social-row a {
+    display: block;
+    font-size: .7em;
+  }
+}
+@media (max-width: 690px) {
+  .about-row p {
+    padding-top: 50%;
+  }
+  .social-icons i {
+    padding-right: 60%;
+  }
+}
+
 /* NAVBAR STYLINGS */
 
 nav {
   width: 100%;
-  padding: 10px;
-  background-color: #383737;
+  padding: 2px;
+  background-color: #211F1D;
   color: whitesmoke;
 }
-
 .logo {
   float: left;
+  font-size: 26px;
+  text-decoration: overline dotted #AD4834;
 }
-
-ul {
-  list-style: none;
+.nav-links {
+  width: 15%;
   float: right;
+  list-style: none;
 }
-li {
-  display: inline-block;
-  margin: 5px;
-  border: 1px solid black;
-  border-radius: 15%;
-  padding: 10px;
-  background-color: white;
-  color: black;
-}
-li:hover {
-  background-color: #B26220;
-  color: white;
-}
-
-/* HEADER STYLING */
-
-.headercontainer {
-  height: 100vh;
-}
-
-.headerimage {
-  background-image: url('../images/banner.jpeg');
-  height: 100vh;
+.nav-button {
+  background-image: url('../images/gplay.png');
+  background-repeat: repeat;
   background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 50%;
+  text-decoration: none;
   display: inline-block;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #AD4834;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 15px;
+  text-shadow: 1px 1px .75px #211F1D;
+  box-shadow: 1.5px .5px 3px 0px black;
+  width: 100%;
+  margin-left: 2px;
+  transition: all .3s ease-in-out;
 }
-.header-description {
+.nav-button:hover {
+  background-color: #E35D42;
+  color: #F6FFF9;
+  box-shadow: inset .5px .5px 1px .5px #211F1D;
+  cursor: pointer;
+}
+
+/* BODY STYLING */
+
+.screen-container {
+  width: 100%;
+  height: 118.96vh;
+  position: relative;
+}
+.hidden-scroll {
+  overflow: hidden;
+}
+.about-row {
+  text-align: justify;
+  display: block;
+  line-height: 1.5em;
+  height: 40%;
+  position: relative;
+  overflow: scroll;
+}
+.about-row p {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+}
+.hey-listen {
+  color: #211F1D;
+  text-shadow: 1px 0px 1px #E35D42;
+}
+.social-row {
+  display: block;
+  position: relative;
+  font-size: 6em;
+  height: 35%;
+  background-color: #40403F;
+  box-shadow: inset 1px 0px 3px 1.5px #80807E;
+  background-image: url('../images/gplay.png');
+  background-repeat: repeat;
+  width: 100%;
+}
+.social-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 50%;
-  display: inline-block;
-  background-color: #4BA3B2;
-  height: 100vh;
+  transform: translate(-50%, -50%);
+}
+.social-icons i {
+  margin-left: 100px;
+  color: #AD4834;
+  text-shadow: 1px 1px 2px #211F1D;
+  transform: scale(1);
+  transition: all .5s ease-in-out;
+}
+.social-icons i:hover {
+  color: #E35D42;
+  transform: scale(1.10);
+  cursor: pointer;
+  text-shadow: 2px 2px 4.5px #211F1D;
 }
 
 /* PORTFOLIO STYLING */
 
-.portfolio {
-  height: 500px;
-  background-color: black;
-  position: relative;
-  margin: 0;
-}
 .portfolio-header {
-  color: white;
+  font-size: 44px;
+  text-align: center;
+  margin-bottom: 25px;
+  text-decoration: none;
+  text-shadow: .5px .5px .3px #E35D42;
+}
+
+.portfolio-container {
+  width: 100%;
+  height: 50%;
+  padding-top: 15px;
+}
+.portfolio-header:before, .contact-header:before {
+    display: inline-block;
+    content: "";
+    height: 4px;
+    background-color: #AD4834;
+    width: 30px;
+    margin: 10px;
+    vertical-align: middle;
+    box-shadow: .5px 0px 2.5px #E35D42;
+}
+.portfolio-header:after, .contact-header:after {
+    display: inline-block;
+    content: "";
+    height: 4px;
+    background-color: #AD4834;
+    width: 30px;
+    margin: 10px;
+    vertical-align: middle;
+    box-shadow: .5px 0px 2.5px #E35D42;
+}
+.rpg-row {
+  display: block;
+  height: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 85%;
+  background-image: url('../images/rpg-placeholder.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 0);
+  font-size: 32px;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+.rpg-row p {
   position: absolute;
-  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rpg-row:hover {
+  box-shadow: 1px 1px 4px 2px #636363;
+  color: rgba(255, 255, 255 , .85);
+  text-shadow: 0px 1px 4px #C659CC;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.mtg-row {
+  display: block;
+  height: 50%;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-image: url('../images/mtg-placeholder.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 0);
+  font-size: 32px;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+.mtg-row p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mtg-row:hover {
+  box-shadow: 1px 1px 4px 2px #636363;
+  color: rgba(255, 255, 255 , .85);
+  text-shadow: 0px 1px 4px #78CAC6;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Contact Styling */
+
+.contact {
+  text-align: center;
+  padding-top: 15px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.contact-header {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 15px;
+  text-decoration: none;
+  text-shadow: .5px .5px .3px #E35D42;
+}
+.contact-info {
+  padding: 5px;
+  font-size: 18px;
+  text-shadow: .3px 0px 0px #211F1D;
+}
+.contact a {
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #AD4834;
+}
+.contact a:hover {
+  text-decoration: underline;
+  color: #E35D42;
+}
+
+/* RPG Stlying */
+
+.rpg-project-container, .mtg-project-container {
+  padding-top: 25px;
+  font-style: italic;
+}
+.rpg-project-container img, .mtg-project-container img {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: block;
+  box-shadow: 1px 0px 2px 0px #6d6660;
+}
+.rpg-project-container p, .mtg-project-container p {
+  text-align: center;
+  padding: 15px;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+.character-screen, .splash-screen {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.shop-screen, .card-screen {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.battle-screen, .deck-screen {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.mtg-github a {
+  color: #78CAC6;
+}
+.rpg-github a {
+  color: #C659CC;
 }

@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
 import {getDeck, postCards} from "../redux/postdeck"
+import DecksMap from './DecksMap';
 
 class Decks extends Component {
   constructor(props) {
     super(props);
   }
 
-  componentWillMount() {
-    this.props.getDeck();
-  }
+  // componentWillMount() {
+  //   this.props.getDeck();
+  // }
 
   // handleClick(deck) {
   //   const deckMap = deck.map((card) => {
@@ -24,17 +25,9 @@ class Decks extends Component {
   // }
 
   render(){
-    const decks = this.props.deckPost.map((deck) => {
-      return(
-        <div className = "deck-art" key={deck.id}>
-          <img alt="A card, idiot." className="deck-image" src={require("../images/mtgback.jpg")}/>
-          <h4 className="deck-title">{deck.name}</h4>
-        </div>
-      )
-    })
     return (
         <div className="card-box deck-box">
-          {decks}
+          <DecksMap />
         </div>
 
     )}
